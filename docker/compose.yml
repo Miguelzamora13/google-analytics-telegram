@@ -1,0 +1,7 @@
+version: '3'
+services:
+  google-analytics-telegram:
+    build: .
+    volumes:
+      - ./data:/app/data
+
