@@ -1,5 +1,5 @@
 google-analytics-data
 python-telegram-bot
 peewee
-aiohttp==3.7.4
+aiohttp==3.8.5
 PyYAML==5.3.1
