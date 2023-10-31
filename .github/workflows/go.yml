@@ -14,15 +14,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.42.0
+    - uses: actions/checkout@v3
 
     - name: Set up Go
-      uses: actions/setup-go@v2.42.0
+      uses: actions/setup-go@v4
       with:
         go-version: '1.20'
 
     - name: Build
-      run: go build 2.42.0
+      run: go build -v ./...
 
     - name: Test
-      run: go test 2.42.0
+      run: go test -v ./...
+
